@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Raleway Sans Serif';
-  src: url('fonts/Raleway-Sans/Raleway-VariableFont_wght.ttf') format('woff2');
+  src: 
+    url('fonts/Raleway-Sans/Raleway-VariableFont_wght.woff2') format('woff2'),
+    url('fonts/Raleway-Sans/Raleway-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; 
 }

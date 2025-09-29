@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
   font-family: 'Raleway Sans Serif';
   src: 
@@ -28,7 +33,7 @@ body {
 
 header {
     background-color: var(--color-secundario-claro);
-    padding: 5px;
+    padding: 3rem;
     text-align: left;
 }
 
@@ -39,13 +44,11 @@ h1 {
     margin-left: 10px;
 }
 
-nav {
-    margin-top: -16px;
-}
-
 nav ul {
     list-style-type: none;
-    padding: 3%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 4rem;
     background-color: var(--color-primario-claro);
 }
 
@@ -65,17 +68,30 @@ nav ul li {
 }
 
 
+main {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem;
+    gap: 2rem;
+}
+
 section {
-    margin-left: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background-color: var(--color-fondo);
+    border-style: solid;
+    border-color: var(--color-primario);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.3);
+    padding: 2rem;
+    width: 45%;
 }
 
 section h2 {
     font-family: Noto Serif, serif;
     font-size: 20px;
+    margin-bottom: 1rem;
     color: var(--color-primario);
-    margin-bottom: -5px;
 }
 
 section p {
@@ -84,13 +100,24 @@ section p {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-primario-claro);
-    padding: 5px;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: left;
 }
 
 footer p {
     color: var(--color-primario-oscuro);
     font-weight: bold;
-    margin-left: 5px;
+}
+
+@media (width <= 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+    }
 }
